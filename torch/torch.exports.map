@@ -1,0 +1,1 @@
+LIBC { global: fwrite; __fwrite_chk; local: *; };

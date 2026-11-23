@@ -1,0 +1,7 @@
+# Recovery-only state files. No flashlight hardware is enabled at startup.
+# libn50_torch translates ONLY UI writes to brightness into MTK ioctls.
+on post-fs
+    mkdir /tmp/n50_torch_ 0755 root root
+    mkdir /tmp/n50_torch_/flashlight 0755 root root
+    write /tmp/n50_torch_/flashlight/max_brightness 1
+    write /tmp/n50_torch_/flashlight/brightness 0

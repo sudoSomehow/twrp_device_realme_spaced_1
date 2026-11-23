@@ -177,3 +177,5 @@ TW_INCLUDE_RESETPROP := true
 
 # Apex
 TW_EXCLUDE_APEX := true
+
+include $(DEVICE_PATH)/build/fixes.mk

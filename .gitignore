@@ -1,3 +1,8 @@
 *.log
 *.txt
 *.dmesg
+
+# Local offline tests
+__pycache__/
+*.pyc
+/tests/.work/

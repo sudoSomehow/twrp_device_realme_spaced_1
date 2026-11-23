@@ -27,4 +27,9 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libresetprop
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so 
+    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
+
+# Recovery-only torch adapter; use the same packaging/relink path as libresetprop.
+TARGET_RECOVERY_DEVICE_MODULES += libn50_torch
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libn50_torch.so
